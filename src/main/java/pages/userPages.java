@@ -5,9 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class userPages {
     public WebDriver driver;
-    private By addLink = By.xpath("/html/body/table/thread/tr[2]/td/button");
-
-
+    private By clickAdd = By.xpath("/html/body/div[3]/div[3]/button[2]");
     public userPages(WebDriver driver) {
     this.driver = driver;
     }
@@ -16,7 +14,6 @@ public class userPages {
     clickButtonLink(xpath);
     return new newUserPage(driver);
 }
-
     public void clickButtonLink(String xpath){
         driver.findElement(By.xpath(xpath)).click();
     }

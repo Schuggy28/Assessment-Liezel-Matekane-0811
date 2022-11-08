@@ -32,9 +32,13 @@ public class baseTest {
         driver.getTitle(); //Gets the title of the application
         System.out.println("Title name: " + driver.getTitle());
     }
+
+
         @AfterMethod
         //creates reports for passed/failed tests
         public void captureScreenShot(ITestResult testResult) {  //this is a function
+
+            driver.findElement(By.xpath("/html/body/div[3]/div[3]/button[2]")).click();
 
             if (testResult.FAILURE == testResult.getStatus()) {
                 TakesScreenshot screenshot = (TakesScreenshot) driver;
@@ -63,13 +67,5 @@ public class baseTest {
                 }
 
             }
-    }
-
-    @AfterMethod
-    public void saveUser() {
-
-        driver.findElement(By.xpath("/html/body/div[3]/div[3]/button[2]")).click();
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.quit();
     }
 }
