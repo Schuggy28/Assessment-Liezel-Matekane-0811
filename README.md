@@ -12,7 +12,7 @@ Below is a list of patterns and practices that we are looking for in your soluti
 
 Web: 
 ∙ Create the following test case: 
-o Navigate to - http://www.way2automation.com/angularjs-protractor/webtables/ o Validate that you are on the User List Table 
+o Navigate to - http://www.way2automation.com/angularjs-protractor/webtables/ to Validate that you are on the User List Table 
 o Click Add user 
 o Add users with the following details: 
  
